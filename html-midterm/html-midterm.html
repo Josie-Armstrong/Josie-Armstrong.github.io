@@ -1,0 +1,89 @@
+<!--Error: Yo, you gotta have a DOCTYPE tag!-->
+<html>
+<head>
+    
+    <!--Error: this needs to go ABOVE the head, under the DOCTYPE tag. Also it's lang, not language-->
+    <html language="en">
+    
+    <!--Error: no charset specified. Need utf-8 as a charset, or something else.-->
+   
+    <title>Error-Filled Page</title>
+
+ <!--Error: no closing tag for <head>-->   
+<body>
+    <!--Error: no closing tag for h1-->
+    <h1>Welcome to My Error-Filled Page
+    
+    <!--Error: needs an opening paragraph tag-->
+    This is a paragraph with mismatched tags and missing closing tags.</p>
+    
+    <ol> <!--Error: this list starts with an ordered list tag, and ends with an unordered list tag. Given that the items are listed with numbers, they should probably be in an ordered list.-->
+        <li>Item 1</li>
+        <li>Item 2</li>
+        <li>Item 3</li>
+        <li>Item 4</li>
+        <li>Item 5</li>
+        <li>Item 6</li>
+        <li>Item 7</li>
+        <li>Item 8</li>
+        <li>Item 9</li>
+        <li>Item 10</li>
+    </ul>
+
+    <!--Error: no closing tag for the paragraph-->
+    <p>This is another paragraph without proper indentation.
+    
+    <!--Error: this image tag needs an alt attribute-->
+    <img src="image.jpg">
+
+    <!--Error: this link uses an img tag to close. That should be a </a> tag instead-->
+    <a href="https://www.example.com" target="_blank">Click me!</img>
+
+    <!--Error: this table has no closing table tag-->
+    <table>
+        <tr>
+            <th>Name</th>
+            <th>Age</th>
+        </tr>
+        <tr>
+            <td>John</td>
+            <td>25<td> <!--Error: this line has two opening tags. The seconds one needs a "/"-->
+        </tr>
+        <tr>
+            <td>Jane</td>
+            <td>30</td>
+        </tr>
+    
+    <!--Error: "source" is not how the source attribute is actually written. Should be src=""-->
+    <img source="error.jpeg" alt="Error Image">
+
+    <!--Error: needs a header or paragraph tag set around it-->
+    <center>This is centered text.</center>
+
+    <!--Error: the attribute that should be used here is style="background-color:lightgray"-->
+    <p bgcolor="lightgray">Text</p>
+
+    <input type="button" value="Click me">
+
+    <!--Error: you gotta close your comments, buddy-->
+    <!-- This is an unclosed comment-->
+
+    <!--Error: this link needs a closing tag-->
+    <a href="#">Link without closing tag
+
+    <!--Error: three things.
+        1) Shouldn't underline text. At all unless it's a link.
+        2) <em> does not underline unless you specify that in a CSS doc. Normally it italicizes.
+        3) You gotta nest that </em> tag INSIDE the <p> tags.-->
+    <p><em>Underlined text</p></em>
+
+    <!--Error: wrong pairs of tags.
+        <dl> defines a description list, <dt> defines terms, <dd> defines their descriptions.
+        <li> has no place in a <dl> element/section-->
+    <dl>
+        <li>Descriptive Item Title</li>
+        <li>Descriptive Item Text</li>
+    </dl>
+
+</body>
+</html>
