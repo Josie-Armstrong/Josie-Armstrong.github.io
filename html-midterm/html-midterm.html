@@ -65,7 +65,7 @@
         1) Shouldn't underline text. At all unless it's a link.
         2) <em> does not underline unless you specify that in a CSS doc. Normally it italicizes.
         3) You gotta nest that </em> tag INSIDE the <p> tags.-->
-    <p><em>Underlined text</p></em>
+    <p><em>Underlined text</em></p>
 
     <!--Error: wrong pairs of tags.
         <dl> defines a description list, <dt> defines terms, <dd> defines their descriptions.
@@ -78,25 +78,26 @@
 </body>
 </html>
 
-<!-- Error list:
-    1) Missing a DOCTYPE tag
-    2) html tag needs to be above the head, and the attribute is "lang," not "language"
-    3) Need to specify a charset in a meta tag in the head (this is missing)
-    4) Missing a closing tag for the head
-    5) <h1> (header 1) missing a closing tag
-    6) Missing an opening <p> (paragraph) tag
-    7) List uses an <ol> (ordered list) tag to open, and a <ul> (unordered list) tag to close. Should be <ol>, based on how the list items appear to have an order.
-    8) Paragraph missing a closing tag
-    9) <img> (image) tag needs an alt attribute
-    10) <a> (link) tag using an <img> tag to close. Needs to be </a>
-    11) Table has no closing </table> tag
-    12) In the <td> that is 25 (under John), there is a missing /. Ends up looking like two opening tags, missing a closing tag.
-    13) In the <img> tag: "source" is not the attribute, it's "src"
-    14) The <center> tags are not paragraph or header tags in themselves. Needs a header or paragraph tag around it
-    15) The name of the color attribute here should be "background-color," not "bgcolor"
-    16) Unclosed comment
-    17) Link is missing a closing tag
-    18) <em> tags need to be nested within the <p> tags (and would italicize by default, not underline)
-    19) Wrong tag for the descriptive item title, should be <dt> for term
-    20) Wrong tag for the descriptive item text, should be <dd>
--->
+<h2> Error list: </h2>
+<ol>
+    <li>Missing a DOCTYPE tag</li>
+    <li>html tag needs to be above the head, and the attribute is "lang," not "language"</li>
+    <li>Need to specify a charset in a meta tag in the head (this is missing)</li>
+    <li>Missing a closing tag for the head</li>
+    <li>Header 1 missing a closing tag</li>
+    <li>Missing an opening paragraph tag</li>
+    <li>>List uses an ordered list tag to open, and an unordered list tag to close. Should be an ordered list, based on how the list items appear to have an order.</li>
+    <li>Paragraph missing a closing tag</li>
+    <li>image tag needs an alt attribute</li>
+    <li>tag using an image tag to close. Needs to be a link tag</li>
+    <li>Table has no closing table tag</li>
+    <li>In the table data line that is 25 (under John), there is a missing /. Ends up looking like two opening tags, missing a closing tag.</li>
+    <li>In the image tag: "source" is not the attribute, it's "src"</li>
+    <li>The "center" tags are not paragraph or header tags in themselves. Needs a header or paragraph tag around it</li>
+    <li>The name of the color attribute here should be "background-color," not "bgcolor"</li>
+    <li>Unclosed comment</li>
+    <li>Link is missing a closing tag</li>
+    <li> emphasis tags need to be nested within the paragraph tags (and would italicize by default, not underline)</li>
+    <li>Wrong tag for the descriptive item title, should be definition term tag for term</li>
+    <li>Wrong tag for the descriptive item text, should be descriptive definition tag</li>
+</ol>
