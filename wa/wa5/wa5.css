@@ -1,0 +1,132 @@
+/* General page styles */
+
+body {
+    margin: 0;
+}
+  
+html {
+    font-family: 'Helvetica neue', Arial, 'sans serif';
+    font-size: 0.625em;
+    background-color: #ccc;
+}
+  
+/* Card container and text styles */
+
+.card {
+    width: 35em;
+    height: 22em;
+    margin: 5em auto;
+    background-color: red;
+    border: 0.2em solid black;
+    border-radius: 1.5em;
+}
+
+.card h2, .card p {
+    margin: 0em;
+}
+
+/* Card header, footer styles */
+
+.card header, .card footer {
+    height: 30px;
+    padding: 10px;
+}
+  
+.card header {
+    background-image: linear-gradient(to bottom,rgba(0,0,0,0.1), rgba(0,0,0,0));
+    border-radius: 1.5em 1.5em 0 0;
+}
+  
+.card footer {
+    background-image: linear-gradient(to bottom,rgba(0,0,0,0), rgba(0,0,0,0.1));
+    border-radius: 0 0 1.5em 1.5em;
+}
+
+.card header h2 {
+    font-size: 20px;
+    line-height: 1.5;
+}
+
+.card footer p {
+    font-size: 15px;
+    line-height: 2;
+}
+
+/* Card article styles, including the image */
+  
+.card article img {
+    max-height: 100%;
+    float: right;
+}
+
+.card article {
+    height: 120px;
+    background-color: rgba(0,0,0,0.4);
+}
+
+.card article p {
+    padding: 10px;
+    line-height: 1.4;
+    color: white;
+}
+
+/* jla general and text styles */
+
+.jla {
+    width: 35em;
+    height: 22em;
+    margin: 5em auto;
+    background-color: lightblue;
+    border: 0.2em solid darkblue;
+    border-radius: 1.5em;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.jla h2, .jla p {
+    margin: 0em;
+}
+
+/* jla header, footer styles */
+
+.jla header, .jla footer {
+    height: 30px;
+    padding: 10px;
+}
+  
+.jla header {
+    background-image: linear-gradient(to bottom,rgba(0,0,139,0.2), rgba(0,0,139,0));
+    border-radius: 1.5em 1.5em 0 0;
+}
+  
+.jla footer {
+    background-image: linear-gradient(to bottom,rgba(0,0,139,0), rgba(0,0,139,0.2));
+    border-radius: 0 0 1.5em 1.5em;
+}
+
+.jla header h2 {
+    font-size: 20px;
+    line-height: 1.5;
+}
+
+.jla footer p {
+    font-size: 15px;
+    line-height: 2;
+}
+
+/* jla article styles, including the image */
+  
+.jla article img {
+    max-height: 100%;
+    float: right;
+}
+
+.jla article {
+    height: 120px;
+    background-color: rgba(0,0,139,0.4);
+}
+
+.jla article p {
+    padding: 10px;
+    line-height: 1.4;
+    color: white;
+}
