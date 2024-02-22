@@ -1,0 +1,65 @@
+
+/* Image in the background */
+body{
+    margin: 0;
+}
+
+.bg{
+    background: url(sugar.jpeg) no-repeat;
+    background-size: 768px;
+    height: 500px;
+    width: 768px;
+    /* background-size: 100%; */
+    position: absolute;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.top{
+    background-color: rgb(0,50,50,0.8);
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    padding: 20px 20px;
+    padding-top: 0px;
+    border-radius: 15px;
+    color: white;
+    font-family: Helvetica;
+}
+
+.next{
+    background-color: rgb(0,100,100,0.6);
+    margin: 0;
+    padding: 5px;
+    border-radius: 5px;
+}
+
+.next p{
+    font-size: 15px;
+    text-align: center;
+    line-height: 0;
+}
+
+.top h1{
+    font-size: 30px;
+    text-align: top center;
+    line-height: 1;
+}
+
+.top h3{
+    text-align: center;
+    line-height: 0;
+}
+
+.bottom{
+    background-color: rgb(255,0,0,0.7);
+    position: relative;
+    top: 350px;
+    font-family: Helvetica;
+    padding: 5px 10px;
+    line-height: 0.5;
+}
+
+.bottom p{
+    line-height: 1;
+}
