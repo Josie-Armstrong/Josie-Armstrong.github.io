@@ -5,14 +5,13 @@ body{
     width: 25vw;
     height: 20vh;
     background-color: indianred;
-    transition: background-color 0.5s, color 0.5s, rotate 0.5s, padding 1s;
+    transition: background-color 0.5s, color 0.5s, padding 1s;
 }
 
 #box1:hover {
     background-color: purple;
     color: white;
     padding: 10px;
-    rotate: 10deg;
 }
 
 
