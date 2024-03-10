@@ -1,0 +1,41 @@
+body{
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Verdana, sans-serif;
+    background-color: #8278b8;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+.intro{
+    background-color:lightcoral;
+    margin: 0;
+    grid-column: 1 / span 2;
+}
+
+.header{
+    position: sticky;
+    top: 0px;
+
+    color: white;
+    background-color: #443d97;
+    text-align: center;
+    grid-column: 1 / span 2;
+}
+
+h1{
+    font-size: 30px;
+}
+
+.concerts {
+    margin: 1vw;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 1vw;
+}
+
+.event{
+    background-color: #dcd9ed;
+    padding-left: 1vw;
+    padding-right: 1vw;
+}
+
