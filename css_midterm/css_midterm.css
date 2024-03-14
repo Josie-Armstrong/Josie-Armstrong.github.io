@@ -1,4 +1,4 @@
-body{
+body {
     font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Verdana, sans-serif;
     background-color: #8278b8;
     margin: 0;
@@ -6,13 +6,7 @@ body{
     flex-direction: column;
 }
 
-.intro{
-    background-color:lightcoral;
-    margin: 0;
-    grid-column: 1 / span 2;
-}
-
-.header{
+.header {
     position: sticky;
     top: 0px;
 
@@ -20,22 +14,166 @@ body{
     background-color: #443d97;
     text-align: center;
     grid-column: 1 / span 2;
+    padding: 10px;
 }
 
-h1{
-    font-size: 30px;
+.fakenav {
+    display: flex;
+    justify-content: center;
+    padding-bottom: 5px;
 }
 
-.concerts {
+.fakenav a {
+    flex-grow: 1;
+    color: white;
+    text-decoration: none;
+    background-color: #443d97;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    transition: background-color 0.5s;
+}
+
+.fakenav a:hover {
+    background-color: #8278b8;
+}
+
+h1 {
+    font-size: 40px;
+    line-height: 80%;
+}
+
+.griddy {
     margin: 1vw;
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-gap: 1vw;
 }
 
-.event{
+.event {
     background-color: #dcd9ed;
+    padding-top: 0;
     padding-left: 1vw;
     padding-right: 1vw;
+    padding-bottom: 1vw;
+    border-radius: 30px;
+}
+
+.event h2 {
+    font-size: 30px;
+    text-align: center;
+    line-height: 100%;
+    margin-bottom: 0px;
+    padding-bottom: 0px;
+}
+
+.date {
+    text-align: center;
+    font-style: italic;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+#intro h2 {
+    text-align: center;
+    line-height: 100%;
+}
+
+#intro {
+    text-align: justify;
+}
+
+.abouty {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.abouty a {
+    margin: 30px;
+    background-color: #443d97;
+    padding: 20px;
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+    transition: background-color 0.5s;
+    border-style: solid;
+    border-width: 3px;
+    border-color: white;
+}
+
+.abouty a:hover {
+    background-color: #8278b8;
+}
+
+.paragraphy {
+    text-align: justify;
+}
+
+.details {
+    display: flex;
+    flex-direction: row;
+    color: white;
+    margin-top: 30px;
+}
+
+.featured {
+    flex-basis: 100%;
+    background-color: #8278b8;
+    margin-right: 0.5vw;
+    padding: 10px;
+
+    border-style: solid;
+    border-color: white;
+    border-width: 3px;
+}
+
+.repertoire {
+    flex-basis: 100%;
+    background-color: #8278b8;
+    margin-left: 0.5vw;
+    padding: 10px;
+
+    border-style: solid;
+    border-color: white;
+    border-width: 3px;
+}
+
+.details h3 {
+    padding-top: 0;
+    margin-top: 0;
+    text-align: center;
+}
+
+.details p {
+    margin: 5px;
+    font-size: 14px;
+}
+
+.tickets {
+    display: flex;
+    margin: 30px;
+}
+
+.tickets a {
+    padding: 10px;
+
+    background-color: #443d97;
+    color: white;
+
+    text-decoration: none;
+    font-size: 20px;
+    text-align: center;
+
+    transition: background-color 0.5s;
+
+    border-style: solid;
+    border-width: 3px;
+    border-color: white;
+
+    flex-grow: 1;
+}
+
+.tickets a:hover {
+    background-color: #8278b8;
 }
 
