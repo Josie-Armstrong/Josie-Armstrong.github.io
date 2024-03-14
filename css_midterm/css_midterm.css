@@ -8,13 +8,13 @@ body {
 
 .header {
     position: sticky;
-    top: 0px;
+    top: 0vw;
 
     color: white;
     background-color: #443d97;
     text-align: center;
     grid-column: 1 / span 2;
-    padding: 10px;
+    padding: 1vw;
 }
 
 .fakenav {
@@ -38,7 +38,7 @@ body {
 }
 
 h1 {
-    font-size: 40px;
+    font-size: 2.5vw;
     line-height: 80%;
 }
 
@@ -55,22 +55,27 @@ h1 {
     padding-left: 1vw;
     padding-right: 1vw;
     padding-bottom: 1vw;
-    border-radius: 30px;
+    border-radius: 2vw;
 }
 
 .event h2 {
-    font-size: 30px;
+    font-size: 2vw;
     text-align: center;
     line-height: 100%;
-    margin-bottom: 0px;
-    padding-bottom: 0px;
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
+
+.event p {
+    font-size: 1vw;
 }
 
 .date {
     text-align: center;
     font-style: italic;
-    margin-top: 10px;
-    margin-bottom: 10px;
+    margin-top: 0.6vw;
+    margin-bottom: 0.6vw;
+    font-size: 1.2vw;
 }
 
 #intro h2 {
@@ -89,15 +94,15 @@ h1 {
 }
 
 .abouty a {
-    margin: 30px;
+    margin: 2vw;
     background-color: #443d97;
-    padding: 20px;
+    padding: 1.3vw;
     color: white;
     text-decoration: none;
-    font-size: 20px;
+    font-size: 1.3vw;
     transition: background-color 0.5s;
     border-style: solid;
-    border-width: 3px;
+    border-width: 0.2vw;
     border-color: white;
 }
 
@@ -113,29 +118,29 @@ h1 {
     display: flex;
     flex-direction: row;
     color: white;
-    margin-top: 30px;
+    margin-top: 2vw;
 }
 
 .featured {
     flex-basis: 100%;
     background-color: #8278b8;
     margin-right: 0.5vw;
-    padding: 10px;
+    padding: 0.6vw;
 
     border-style: solid;
     border-color: white;
-    border-width: 3px;
+    border-width: 0.2vw;
 }
 
 .repertoire {
     flex-basis: 100%;
     background-color: #8278b8;
     margin-left: 0.5vw;
-    padding: 10px;
+    padding: 0.6vw;
 
     border-style: solid;
     border-color: white;
-    border-width: 3px;
+    border-width: 0.2vw;
 }
 
 .details h3 {
@@ -145,29 +150,29 @@ h1 {
 }
 
 .details p {
-    margin: 5px;
-    font-size: 14px;
+    margin: 0.3vw;
+    font-size: 1vw;
 }
 
 .tickets {
     display: flex;
-    margin: 30px;
+    margin: 2vw;
 }
 
 .tickets a {
-    padding: 10px;
+    padding: 0.6vw;
 
     background-color: #443d97;
     color: white;
 
     text-decoration: none;
-    font-size: 20px;
+    font-size: 1.3vw;
     text-align: center;
 
     transition: background-color 0.5s;
 
     border-style: solid;
-    border-width: 3px;
+    border-width: 0.2vw;
     border-color: white;
 
     flex-grow: 1;
@@ -175,5 +180,72 @@ h1 {
 
 .tickets a:hover {
     background-color: #8278b8;
+}
+
+@media (max-width: 400px) {
+
+    .griddy {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+
+    .event {
+        border-radius: 2vw;
+        padding: 2vw;
+        margin: 2vw;
+    }
+
+    .event p {
+        font-size: 3vw;
+    }
+
+    .event h2 {
+        font-size: 5vw;
+    }
+
+    .header h1 {
+        font-size: 4.5vw;
+    }
+
+    #intro h2 {
+        font-size: 3.5vw;
+    }
+
+    .date {
+        font-size: 3vw;
+    }
+
+    .abouty a {
+        font-size: 3.5vw;
+        padding: 3vw;
+        border-width: 1vw;
+    }
+
+    .details {
+        flex-direction: column;
+        margin: 0;
+    }
+
+    .details h3 {
+        font-size: 3.5vw;
+        margin-bottom: 0;
+    }
+
+    .featured, .repertoire {
+        padding: 1.5vw;
+        margin: 0;
+        margin-top: 2vw;
+        border-width: 1vw;
+    }
+
+    .tickets {
+        margin: 2vw 0;
+    }
+
+    .tickets a {
+        font-size: 3.5vw;
+        padding: 3vw;
+        border-width: 1vw;
+    }
 }
 
