@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="wa12.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="app">
+        <header>Movie & TV Trivia</header>
+        <div class="score">
+          <h2 id="score">Score: 0</h2>
+        </div>
+        <section class="quotes">
+          <div class="quote-text" id="js-quote-text"></div>
+          <div class="quote-text" id="js-answer-text"></div>
+        </section>
+        <section class="answers">
+          <button type="button" id="answer1" class="option">Answer1</button>
+          <button type="button" id="answer2" class="option">Answer1</button>
+          <button type="button" id="answer3" class="option">Answer1</button>
+          <button type="button" id="answer4" class="option">Answer1</button>
+        </section>
+        <section class="controls" >
+          <button type="button" id="js-new-quote" class="new-quote button">
+            Generate a new bit of trivia!
+          </button>
+          <button type="button" id="js-tweet" class="twitter button">
+            Show me the answer!
+          </button>
+          <!-- <a class="answer button" id="js-tweet" target="_blank" rel="noreferrer">Show me the answer!</a> -->
+        </section>
+        <section class = "explainy">
+          <p><strong>What I changed:</strong> I added a multiple choice feature to the page. Users can view the question, click the answer they think is right, and be told whether or not they're correct! If they're incorrect, the correct answer will also appear in green. If they give up, they can click "show answer" to see the answer without choosing. I also added a score to the page, which increments every time the user gets a question correct.</p>
+        </section>
+      </div>
+      <script src="wa12.js"></script>
+</body>
+</html>

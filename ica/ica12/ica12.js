@@ -20,6 +20,7 @@ async function getQuote() {
         }
 
         const json = await response.json();
+        console.log(json);
         console.log(json["question"]);
         displayQuote(json["question"]);
 

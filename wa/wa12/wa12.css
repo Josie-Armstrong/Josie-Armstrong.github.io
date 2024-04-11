@@ -1,0 +1,150 @@
+html {
+    box-sizing: border-box;
+  }
+  
+  *,
+  *::before,
+  *::after {
+    box-sizing: inherit;
+    margin: 0;
+    padding: 0;
+  }
+  
+  body {
+    font-family:'Courier New', Courier, monospace;
+    background-color: slateblue;
+  }
+  
+  .app {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 800px;
+    background-color: white;
+    border-radius: 20px;
+    box-shadow: 0 2px 2px 0 rgba(0,0,0,.14), 0 3px 1px -2px rgba(0,0,0,.2), 0 1px 5px 0 rgba(0,0,0,.12);
+  }
+
+  .explainy {
+    padding: 20px 50px;
+  }
+
+  .score {
+    text-align: center;
+    justify-content: center;
+    margin: auto;
+    margin-top: 20px;
+    background-color: slateblue;
+    padding: 10px;
+    width: 200px;
+    border-radius: 30px;
+    color: white;
+  }
+  
+  header {
+    width: 100%;
+    font-size: 30px;
+    text-align: center;
+    padding: 10px;
+    border-bottom: 3px solid #ebebeb;
+    font-weight: bold;
+  }
+  
+  .quotes {
+    padding: 20px 50px;
+    min-height: 150px;
+  }
+  
+  .quote-text {
+    padding-bottom: 20px;
+    font-size: 25px;
+    color: black;
+  }
+
+  #js-answer-text {
+    text-align: center;
+    padding-bottom: 10px;
+    padding-top: 10px;
+    min-height: 50px;
+  }
+  
+  .controls {
+    width: 100%;
+    padding: 20px 50px;
+  }
+  
+  .button {
+    display: block;
+    color: white;
+    border-radius: 4px;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    text-align: center;
+    width: 100%;
+    font-size: 20px;
+    box-shadow: 0 2px 2px 0 rgba(0,0,0,.14), 0 3px 1px -2px rgba(0,0,0,.2), 0 1px 5px 0 rgba(0,0,0,.12);
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bold;
+  }
+  
+  .twitter {
+    background-color: darkslateblue;
+    text-decoration: none;
+    transition: background-color 0.2s;
+  }
+  
+  .twitter:hover {
+    background-color: slateblue;
+  }
+  
+  .new-quote {
+    background-color: darkcyan;
+    margin-bottom: 15px;
+    transition: background-color 0.2s;
+  }
+  
+  .new-quote:hover {
+    background-color: #00bebe;
+  }
+  
+  .new-quote:disabled {
+    background-color: #cccccc;
+    color: #666666;
+    cursor: not-allowed;
+  }
+  
+  @media screen and (max-width: 600px) {
+    .app {
+      width: 100%;
+    }
+    .quote-text {
+      font-size: 18px;
+    }
+  }
+
+  .answers {
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    margin-left: 45px;
+    margin-right: 45px;
+  }
+
+  .option {
+    flex-grow: 1;
+    padding: 10px;
+    margin-left: 5px;
+    margin-right: 5px;
+    background-color: black;
+    color: white;
+    border-radius: 5px;
+    border: 0px;
+    transition: background-color 0.7s;
+    font-family: 'Courier New', Courier, monospace;
+  }
+
+  /* .option:hover {
+    background-color: darkslateblue;
+  } */
