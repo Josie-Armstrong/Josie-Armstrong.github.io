@@ -102,17 +102,21 @@ function changeVolume() {
     /* for (i = 0; i < 5; i++) {
         rollDice();
     } */
+    setTimeout(rollDice, 50);
+    setTimeout(rollDice, 100);
+    setTimeout(rollDice, 150);
+    setTimeout(rollDice, 200);
+    setTimeout(rollDice, 250);
+    setTimeout(() => {
+        volume = 0;
+        for (num of rand_array) {
+            volume += num;
+            // console.log(num);
+            // console.log(volume)
+        }
 
-    rollDice();
-
-    volume = 0;
-    for (num of rand_array) {
-        volume += num;
-        // console.log(num);
-        // console.log(volume)
-    }
-
-    vol_text.textContent = "Volume: " + volume;
+        vol_text.textContent = "Volume: " + volume;
+    }, 250);
 }
 
 button.addEventListener("click",changeVolume);
