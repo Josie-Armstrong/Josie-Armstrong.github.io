@@ -1,5 +1,6 @@
 const button = document.getElementById("js-roll"); // roll button
-const vol_text = document.querySelector("#js-volume") // Volume text
+const vol_text = document.querySelector("#js-volume"); // Volume text
+const roll_text = document.getElementById("rolls");
 
 // checkboxes for the dice
 const check1 = document.getElementById("check1");
@@ -41,6 +42,12 @@ let check_array = [check1, check2, check3, check4, check5, check6, check7, check
 let dice_array = [die1, die2, die3, die4, die5, die6, die7, die8, die9, die10, die11, die12, die13, die14, die15, die16];
 let rand_array = [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0];
 let volume = 0;
+
+let sound = document.getElementById("sound");
+sound.loop = true;
+sound.volume = 1.0;
+
+let rolls_left = 5;
 
 // Source: MDN Web Docs (used as a helper to generate a random integer)
 function getRandomInt(min, max) {
@@ -93,6 +100,14 @@ function rollDice() {
             changeImage(dice_array[i], rand_array[i]); // changes image to matching die face
             // console.log(rand_array[i]);
         }
+        else { // this is the random unchecking, there's a 1 in 50 chance for each checkbox, run 5 times. Calculates to 1 in 10.
+            let rand_uncheck = getRandomInt(1,51);
+            if (rand_uncheck == 50) {
+                checkbox.checked = false;
+                rand_array[i] = getRandomInt(1,7); // gets rand 1 thru 6
+                changeImage(dice_array[i], rand_array[i]); // changes image to matching die face
+            }
+        }
     }
 }
 
@@ -102,21 +117,37 @@ function changeVolume() {
     /* for (i = 0; i < 5; i++) {
         rollDice();
     } */
-    setTimeout(rollDice, 50);
-    setTimeout(rollDice, 100);
-    setTimeout(rollDice, 150);
-    setTimeout(rollDice, 200);
-    setTimeout(rollDice, 250);
-    setTimeout(() => {
-        volume = 0;
-        for (num of rand_array) {
-            volume += num;
-            // console.log(num);
-            // console.log(volume)
-        }
 
-        vol_text.textContent = "Volume: " + volume;
-    }, 250);
+    if (rolls_left > 0) {
+        setTimeout(rollDice, 50);
+        setTimeout(rollDice, 100);
+        setTimeout(rollDice, 150);
+        setTimeout(rollDice, 200);
+        setTimeout(rollDice, 250);
+        setTimeout(() => {
+            volume = 0;
+            for (num of rand_array) {
+                volume += num;
+                // console.log(num);
+                // console.log(volume)
+            }
+
+            vol_text.textContent = "Volume: " + volume;
+            sound.volume = (volume / 100); // volume of music actually adjusts to the volume displayed onscreen
+            // console.log(sound.volume);
+            rolls_left -= 1;
+            if (rolls_left == 0) {
+                roll_text.textContent = "You are out of rolls.";
+            }
+            else {
+                roll_text.textContent = "Rolls Left: " + rolls_left;
+            }
+        }, 250);
+
+        if(sound.paused == true){
+            sound.play();
+        }
+    }
 }
 
 button.addEventListener("click",changeVolume);
