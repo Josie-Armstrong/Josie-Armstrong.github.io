@@ -21,15 +21,15 @@ body {
     margin: 0 auto;
     padding: 0 20px;
     max-width: 980px;
-    display: grid;
-    grid-template-columns: 3fr 1fr;
-    grid-template-rows: 1fr;
+    display: grid; /* Setting the grid, and then columns and rows that I want */
+    grid-template-columns: 3fr 1fr; /* I want my blog post to be 3 "units" and my photos to be 1 unit. That is, I want a 3:1 space ratio */
+    grid-template-rows: 1fr; /* I only need one row for this grid */
   }
     
   nav {
     background-color: #000;
     padding: .5em;
-    position: sticky;
+    position: sticky; /* This is how you make the nav bar stick to the top, it's a type of position */
     top: 0px;
   }
     
@@ -37,13 +37,13 @@ body {
     margin: 0;
     padding: 0;
     list-style: none;
-    display: flex;
+    display: flex; /* This is how you get the links to space evenly, see li for more info */
   }
   
   nav li {
-    flex-grow: 1;
-    text-align: center;
-    justify-content: space-evenly;
+    flex-grow: 1; /* If all items have flex-grow set to 1, the remaining space in the container will be distributed equally to all children */
+    text-align: center; /* Puts the text in the center, helps with spacing the flex box. Otherwise it'll be evenly spaced but not centered */
+    justify-content: space-evenly; /* defines alignment within the flex box */
   }
     
   nav a {
@@ -56,9 +56,9 @@ body {
     list-style: none;
     margin: 0;
     padding: 0;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 1px;
+    display: grid; /* this grid fits within the previously defined 1-unit grid section from .grid */
+    grid-template-columns: 1fr 1fr; /* evenly sized, two columns */
+    gap: 1px; /* this is that 1px margin that you need, the gap btwn grid columns & rows */
   }
   
   .feature {
