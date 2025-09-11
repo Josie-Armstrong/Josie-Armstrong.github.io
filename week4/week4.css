@@ -10,3 +10,17 @@
 body {
     /* margin: 0; */
 }
+
+p {
+    color: #488286;
+    padding: 200px;
+}
+
+.myname {
+    color: red;
+    font-family:'Verdana';
+}
+
+a:visited {
+    color: pink;
+}
