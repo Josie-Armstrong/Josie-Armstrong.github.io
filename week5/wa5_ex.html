@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="wa5_ex.css">
+
+    <title>Boulder Clocktower</title>
+</head>
+<body>
+    <nav class="main-nav">
+
+        <div class="nav-brand">Boulder Clocktower</div>
+
+        <button class="nav-toggle" aria-label="Toggle navigation menu" aria-expanded="false"> 
+            <!-- <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div> -->
+            <span class="hamburger"></span>
+            <span class="hamburger"></span>
+            <span class="hamburger"></span>
+        </button>
+
+        <ul class="nav-menu hide">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#resources">Resources</a></li>
+            <li><a href="#events">Events</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+
+    </nav>
+
+    <script>
+        const navToggle = document.querySelector('.nav-toggle');
+        const navMenu = document.querySelector('.nav-menu');
+
+        var menu_shown = false;
+
+        // navMenu.classList.add("show");
+
+        function showMenu() {
+            var shown = navMenu.classList.toggle("show");
+            navMenu.classList.toggle("hide");
+
+            if (shown) {
+                navToggle.setAttribute("aria-expanded", "true");
+                navToggle.style.backgroundColor = "#F4DF85";
+                navToggle.style.transform = "rotate(180deg)"
+                // console.log("true");
+            }
+            else {
+                navToggle.setAttribute("aria-expanded", "false");
+                navToggle.style.backgroundColor = "#fff8da";
+                navToggle.style.transform = "rotate(0deg)"
+                // console.log("false");
+            }
+            // console.log(navMenu.classList);
+            // console.log("this worked");
+        }
+
+        function checkKey(key_code) {
+            if (key_code == 32) {
+                showMenu();
+                console.log("worked");
+            }
+        }
+
+        navToggle.addEventListener('click', showMenu);
+        // window.addEventListener('keydown', event => checkKey(event.keyCode));
+
+    </script>
+</body>
+</html>
