@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="botc-style.css">
+
+    <title>Boulder Clocktower</title>
+</head>
+<body>
+    <nav class="main-nav">
+
+        <div class="nav-brand">Boulder Clocktower</div>
+
+        <button class="nav-toggle" aria-label="Toggle navigation menu" aria-expanded="false"> 
+            <!-- <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div> -->
+            <span class="hamburger"></span>
+            <span class="hamburger"></span>
+            <span class="hamburger"></span>
+        </button>
+
+        <ul class="nav-menu hide">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#resources">Resources</a></li>
+            <li><a href="events.html">Events</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+
+    </nav>
+
+    <main>
+
+        <section class="about-clocktower-grid">
+            <section class="learn">
+                <h2 class="box-header">Learn</h2>
+
+                <iframe class="learn-video" src="https://youtube.com/embed/YDzjRWiOZOY" allowfullscreen></iframe>
+
+                <p>This video by the Good Time Society is fun for beginners and experienced players alike!
+                    If you're new to the game, watching this video will help you get a sense for how Blood on the Clocktower is played,
+                    What sorts of characters you might be, and what strategies you might use in your first few games.
+                    If you liked this video, they have another <a href="https://youtu.be/unY1RLSbAzQ">right here!</a>
+                </p>
+                
+                <p>If you want a direct explanation of the basic rules of the game, you can watch The Pandemonium Institute's video,
+                    starring the incredible Holly Musgraves (also often on No Rolls Barred):
+                </p>
+
+                <iframe class="learn-video" src="https://youtube.com/embed/M-aZP47Nm9g" allowfullscreen></iframe>
+
+                <p>And if you're still searching for more Clocktower to watch after this, check out 
+                    <a href="https://www.youtube.com/playlist?list=PLQBGXhGots83LIf1qY4Zg0Mp9qU1Kr2Hv">No Rolls Barred's Clocktower playlist!</a>
+                    But be sure to start from the beginning, as the later games get complicated.
+                </p>
+
+            </section>
+            
+            <section class="read">
+
+                <h2 class="box-header">Read</h2>
+
+                <p>You may have some questions about certain characters, strategies, or rules as you start watching and/or playing.
+                    Blood on the Clocktower has its own wiki, so no need to worry! An abundance of information is at your fingertips.</p>
+
+                <p>You can access the wiki <a href="https://wiki.bloodontheclocktower.com/Main_Page">by clicking here.</a>
+                    If you're looking for characters specific to Trouble Brewing, the script that's best for beginners, you can find a list of
+                    all Townsfolk, Outsiders, Minions, and Demons (there is only one on Trouble Brewing) <a href="https://wiki.bloodontheclocktower.com/Trouble_Brewing">right here</a>,
+                    along with a quick synopsis and explanation of gameplay. Each character's page includes info on what they do, how that role is run,
+                    and even some strategy tips for both playing as and bluffing as (pretending to be) that character!
+                </p>
+
+                <img src="images/tb_logo.png" alt="Trouble Brewing script logo">
+
+            </section>
+
+            <section class="play">
+                <h2 class="box-header">Play</h2>
+
+                <p>You've watched videos, you've glanced at the wiki, and now you want to get your hands on a script and start playing!
+                    There are two ways to play: online, and in-person with the Boulder Clocktower group!
+                </p>
+
+                <h3>Online Play</h3>
+
+                <p>You can play online using The Pandemonium Institute's official <a href="https://botc.app">Clocktower web app.</a>
+                    Once you've created an account and logged in, you can pick a lobby to play in and join! When you're starting out, look for
+                    games of Trouble Brewing that are marked as "Difficulty: Beginner." Those lobbies will be the most beginner-friendly, and are
+                    often playing with the goal of getting beginners into the game! <em>As a note, you may have to wait for a game to finish before you can join.</em>
+                </p>
+
+                <h3>In-Person Play</h3>
+
+                <p>You can also play in-person with the Boulder Clocktower group (we would love to have you!). To view our upcoming events,
+                    <a href="events.html">visit the events page</a> or join our Discord! You can request a link to join on the
+                    <a href="#contact">contact page.</a>
+                </p>
+
+            </section>
+        </section>
+
+    </main>
+
+    <script>
+        const navToggle = document.querySelector('.nav-toggle');
+        const navMenu = document.querySelector('.nav-menu');
+
+        var menu_shown = false;
+
+        // navMenu.classList.add("show");
+
+        function showMenu() {
+            var shown = navMenu.classList.toggle("show");
+            navMenu.classList.toggle("hide");
+
+            if (shown) {
+                navToggle.setAttribute("aria-expanded", "true");
+                navToggle.style.backgroundColor = "#F4DF85";
+                navToggle.style.transform = "rotate(180deg)"
+                // console.log("true");
+            }
+            else {
+                navToggle.setAttribute("aria-expanded", "false");
+                navToggle.style.backgroundColor = "#fff8da";
+                navToggle.style.transform = "rotate(0deg)"
+                // console.log("false");
+            }
+            // console.log(navMenu.classList);
+            // console.log("this worked");
+        }
+
+        navToggle.addEventListener('click', showMenu);
+
+    </script>
+</body>
+</html>
