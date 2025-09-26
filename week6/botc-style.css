@@ -72,8 +72,8 @@ nav {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 1fr;
-    /* grid-template-areas:
-        "learn read play"; */
+    grid-template-areas:
+        "learn read play";
 
     font-family: 'Trade Gothic';
 
@@ -82,7 +82,6 @@ nav {
 
 .about-clocktower-grid section {
     background-color: #fff5c6;
-    /* background-color: rgb(255, 245, 198, 0.9); */
 
     padding: 20px;
     margin: 10px;
@@ -125,6 +124,41 @@ nav {
     text-align: center;
 
     margin-top: 0;
+}
+
+/* Class example for event page */
+.event-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    grid-template-areas:
+        "event3 event2 event1";
+
+    margin: 20px;
+}
+
+.event {
+    background-color: #fff5c6;
+
+    margin: 16px;
+    padding: 16px;
+}
+
+.event h2 {
+    text-align: center;
+    /* Text align, justify content/self, and align content/self can work */
+}
+
+.event1 {
+    grid-area: event1;
+}
+
+.event2 {
+    grid-area: event2;
+}
+
+.event3 {
+    grid-area: event3;
 }
 
 @media (max-width: 768px) {
