@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="botc-style.css">
+    <title>BOTC Events</title>
+</head>
+<body>
+
+    <nav class="main-nav">
+
+        <div class="nav-brand">Boulder Clocktower</div>
+
+        <button class="nav-toggle" aria-label="Toggle navigation menu" aria-expanded="false"> 
+            <!-- <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div> -->
+            <span class="hamburger"></span>
+            <span class="hamburger"></span>
+            <span class="hamburger"></span>
+        </button>
+
+        <ul class="nav-menu hide">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#resources">Resources</a></li>
+            <li><a href="events.html">Events</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+
+    </nav>
+
+    <main> <!--This is where I put the main content in my page (like a grid)-->
+
+        <div class="event-grid">
+            <section class="event1 event">
+                <h2>Event here 1</h2>
+                <p>Details to come</p>
+            </section>
+
+            <section class="event2 event">
+                <h2>Event here 2</h2>
+                <p>Details to come</p>
+            </section>
+
+            <section class="event3 event">
+                <h2>Event here 3</h2>
+                <p>Details to come</p>
+            </section>
+        <div>
+
+    </main>
+
+    <script>
+        const event1 = document.querySelector(".event1");
+        let color_changed = false;
+
+        function changeBgCol(event) {
+            console.log("triggered");
+            if (event.key == "c") {
+
+                if (color_changed == false) {
+                    event1.style.backgroundColor = "#000000";
+                    color_changed = true;
+                }
+                else {
+                    event1.style.backgroundColor = "#fff8da";
+                    color_changed = false;
+                }
+
+            }
+        }
+
+        addEventListener("keydown", (event) => {changeBgCol(event)})
+    </script>
+    
+</body>
+</html>
