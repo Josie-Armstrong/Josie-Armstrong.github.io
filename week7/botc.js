@@ -4,6 +4,7 @@ const gridArray = [document.querySelector('.learn'), document.querySelector('.re
 const mainGrid = document.querySelector('.about-clocktower-grid');
 const main = document.querySelector('main');
 
+// These are the footer buttons for text size changes
 const small_txt = document.querySelector('#small-text');
 const med_txt = document.querySelector('#med-text');
 const large_txt = document.querySelector('#large-text');
