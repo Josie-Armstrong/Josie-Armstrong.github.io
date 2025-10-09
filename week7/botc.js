@@ -60,6 +60,11 @@ function changeBgCol(event) {
 
 // !!! DEMO CODE FOR WEEK 7 !!!
 
+/* ALGORITHM:
+- Write function to do this
+    - In function, what I do
+*/
+
 // HOW TO CHANGE TEXT SIZE. Updates local storage.
 function change_text_size(size) {
     // document.html.style.fontSize = str(size, "px");
