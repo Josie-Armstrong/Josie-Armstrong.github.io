@@ -13,7 +13,6 @@ for (i = 0; i < btnarray.length; i++) {
 
 let current = {
     show: "",
-    fullshow: "",
     episode: "",
     end: "",
     index: 0

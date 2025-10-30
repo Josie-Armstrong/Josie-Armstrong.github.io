@@ -7,7 +7,7 @@ let current = {
     answer: "",
 }
 
-const endpoint = "https://trivia.cyberwisp.com/getrandomchristmasquestion";
+const endpoint = "https://random-d.uk/api/random";
 
 async function newTrivia() {
     // console.log("Success");
@@ -18,10 +18,10 @@ async function newTrivia() {
             throw Error(response.statusText)
         }
         const json = await response.json();
-        //console.log(json);
-        displayTrivia(json["question"]);
-        current.question = json["question"];
-        current.answer = json["answer"];
+        console.log(json);
+        // displayTrivia(json["question"]);
+        // current.question = json["question"];
+        // current.answer = json["answer"];
         //console.log(current.question);
         //console.log(current.answer);
      } catch (err) {
